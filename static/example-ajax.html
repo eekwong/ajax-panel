@@ -4,6 +4,13 @@
 <script type="text/javascript">
 function toggleCAdvisorPoll() {
 	alert($);
+	if (window.jQuery) {  
+        // jQuery is loaded  
+        alert("Yeah!");
+    } else {
+        // jQuery is not loaded
+        alert("Doesn't Work");
+    }
 	var xhr = new XMLHttpRequest();
 	xhr.open('GET', 'toggleCAdvisorPoll?db=health');
 	xhr.send(null);
