@@ -1,0 +1,10 @@
+<div>
+<a class="pointer" href="#" onclick="toggleCAdvisorPoll()"><i class="fa fa-fw fa-toggle-%s"></i><span>cAdvisor Stats Summary</span></a>
+</div>
+function toggleCAdvisorPoll() {
+	alert($);
+	var xhr = new XMLHttpRequest();
+	xhr.open('GET', 'toggleCAdvisorPoll?db=health');
+	xhr.send(null);
+	return false;
+}
